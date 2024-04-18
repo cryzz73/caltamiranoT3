@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="caltamiranoT3.Vistas.vPrincipal">
+    <VerticalStackLayout
+        Spacing="25"
+        Padding="30,0">
+        
+        <Label 
+            Text="Bienvenidos"
+            TextColor="Blue"
+            FontSize="24"
+            HorizontalTextAlignment="Center" 
+            />
+        
+        <Label
+            x:Name="lblUsuario"
+            TextColor="DarkSlateBlue"
+            FontSize="14"
+            HorizontalTextAlignment="End"/>
+        <Image 
+            Source="imagee.gif"
+            HeightRequest="200" 
+            HorizontalOptions="Center" 
+            IsAnimationPlaying="True" />
+        
+    </VerticalStackLayout>
+</ContentPage>

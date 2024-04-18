@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="caltamiranoT3.Vistas.vLogin"
+             >
+    <VerticalStackLayout Spacing="25"
+        Padding="30,0">
+
+        <Label 
+            Text="Vista Inicio de sesión"
+            HorizontalTextAlignment="Center"
+            FontSize="20"
+            TextColor="Red"
+            />
+        <Image Source="imagen.jpg"
+               HeightRequest="250"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label
+                Text="Usuario"
+                FontSize="20"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Grid.Row="0"
+                 />
+            <Entry
+                x:Name="txtUsuario"
+                Placeholder="Ingrese su usuario"
+                MaxLength="7"
+                Grid.Column="1"
+                
+    />
+            <Label
+                Text="Contraseña"
+                FontSize="20"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Grid.Row="1"
+                Grid.Column="0"/>
+            <Entry
+                x:Name="txtContrasena"
+                Placeholder="ingrese contraseña"
+                IsPassword="True"
+                Grid.Row="1"
+                Grid.Column="1"
+                />
+            <Label
+                Text=""
+                Grid.Row="2"
+                />
+
+            <Button
+                x:Name="btnIniciar"
+                Text="INICIAR SESION"
+                Clicked="btnIniciar_Clicked"
+                BorderColor="DarkGreen"
+                 Grid.Row="3"
+                Grid.Column="1"
+                />
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
